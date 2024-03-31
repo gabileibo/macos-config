@@ -35,10 +35,3 @@ dockitems_persist: []
 configure_defaults: false
 
 defaults: [] 
-
-# Example defaults:
-# defaults:
-#   - domain: NSGlobalDomain
-#     prefs:
-#       # fast trackpad speed
-#       - { key: "com.apple.trackpad.scaling", value: 2.0, type: "float" }

@@ -1,0 +1,56 @@
+configure_osx: true
+
+homebrew_installed_packages:
+  - gh
+  - zsh
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting 
+
+homebrew_taps:
+  - homebrew/cask-fonts
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps:
+  - arc
+  - font-hack-nerd-font
+  - iterm2
+  - slack
+
+configure_dock: true
+
+# Default dock items
+dockitems_remove:
+  - Launchpad
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Music
+  - Freeform
+  - TV
+  - Music
+  - News
+  - "App Store"
+
+dockitems_persist:
+  - name: "System Settings"
+    path: "/Applications/System Settings.app"
+    pos: 1
+  - name: iTerm
+    path: "/Applications/Iterm.app/"
+    pos: 2
+
+configure_defaults: true
+
+defaults:
+  - domain: NSGlobalDomain
+    prefs:
+      # fast trackpad speed
+      - { key: "com.apple.trackpad.scaling", value: 2.0, type: "float" }
