@@ -1,0 +1,44 @@
+configure_osx: true
+
+homebrew_installed_packages: []
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps: []
+
+configure_dock: false
+
+# Default dock items
+dockitems_remove:
+  - Launchpad
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Music
+  - Freeform
+  - TV
+  - Music
+  - News
+  - "App Store"
+
+dockitems_persist: []
+
+configure_defaults: false
+
+defaults: [] 
+
+# Example defaults:
+# defaults:
+#   - domain: NSGlobalDomain
+#     prefs:
+#       # fast trackpad speed
+#       - { key: "com.apple.trackpad.scaling", value: 2.0, type: "float" }

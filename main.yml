@@ -1,0 +1,28 @@
+---
+- name: Configure host.
+  hosts: all
+
+  vars_files:
+    - default.config.yml
+
+  pre_tasks:
+    - name: Include playbook configuration.
+      include_vars: "{{ item }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yml"
+      tags: ['always']
+
+  roles:
+    - role: elliotweiser.osx-command-line-tools
+      
+    - role: geerlingguy.mac.homebrew
+      tags: ['homebrew']
+
+    - role: geerlingguy.mac.dock
+      when: configure_dock
+      tags: ['dock']
+
+  tasks:
+  - import_tasks: tasks/defaults.yml
+    when: configure_defaults
+    tags: ['defaults'] 

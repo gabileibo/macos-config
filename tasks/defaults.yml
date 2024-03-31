@@ -1,0 +1,8 @@
+---
+- name: Apply defaults for each domain
+  community.general.osx_defaults:
+    domain: "{{ item.0.domain }}"
+    key: "{{ item.1.key }}"
+    value: "{{ item.1.value }}"
+    type: "{{ item.1.type }}"
+  loop: "{{ defaults | subelements('prefs') }}"
