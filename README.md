@@ -18,13 +18,13 @@ ansible-galaxy install -r requirements.yml
 
 ### Run playbook
 
-- Run full playbook
+Run full playbook
 
 ```
 ansible-playbook main.yml -K
 ```
 
-- Run specific tags
+Run specific tags
 
 ```
 ansible-playbook main.yml -K --tags "defaults"
