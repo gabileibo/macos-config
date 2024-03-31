@@ -4,6 +4,8 @@
 
 ### Preparation
 
+Create a `config.yml` to override the `default.config.yml`
+
 ```
 xcode-select --install
 
